@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <table class="table">
+        <thead class="thead">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Actions</th>
+        </thead>
+        <tbody class="tbody">
+             
+        </tbody>
+    </table>
+
+        <!-- Modal content for delete-->
+    <div id="myModaldelete" class="modaldelete">
+        <div class="modal-contentdelete">
+          <button class="delete">Delete</button>
+          <button class="close">Close</button>
+        </div>
+      
+    </div>
+
+        <!-- Modal content for edit -->
+    <div id="myModaledit" class="modaledit">
+
+        <div class="modal-contentedit">
+          <span class="closeedit">&times;</span>
+          
+          <form class="formedit" >
+
+            <label for="name" >Name:
+                <input name="name" type="text" placeholder="Name">
+            </label>
+            <label for="surname">Surname:
+                <input name="surname" type="text" placeholder="Surname">
+            </label>
+            <label for="age">Age:
+                <input name="age" type="number" placeholder="Age">
+            </label>
+            <label for="phone">Phone:
+                <input name="phone" type="number" placeholder="Phone">
+            </label>
+            <label for="course">Course:
+                <input name="course" type="text" placeholder="Course">
+            </label>
+            <button type="submit">Edit</button>
+            
+          </form>
+        </div>
+      
+    </div>
+
+
+    <!-- modal content for Add -->
+    <div id="myModaladd" class="modaladd">
+        <div class="modal-contentadd">
+          <span class="closeadd">&times;</span>
+          <form class="formadd" >
+
+            <label for="nameadd" >Name:
+                <input name="nameadd" type="text" placeholder="Name">
+            </label>
+            <label for="surnameadd">Surname:
+                <input name="surnameadd" type="text" placeholder="Surname">
+            </label>
+            <label for="ageadd">Age:
+                <input name="ageadd" type="number" placeholder="Age">
+            </label>
+            <label for="phoneadd">Phone:
+                <input name="phoneadd" type="number" placeholder="Phone">
+            </label>
+            <label for="courseadd">Course:
+                <input name="courseadd" type="text" placeholder="Course">
+            </label>
+            <button type="submit">Add</button>
+            
+          </form>
+        </div>
+      
+    </div>
+
+        <!-- Modal content for readmi -->
+    <div id="myModalopen" class="modalopen">
+        <div class="modal-contentopen">
+          <span class="closeopen">&times;</span>
+        <table class="table">
+            <thead class="thead">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Course</th>
+                </thead>
+            <tbody class="tbodyadd">
+
+            </tbody>
+        </table>
+        </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js.js"></script>
+</body>
+</html>
